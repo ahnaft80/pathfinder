@@ -15,8 +15,8 @@ A React application that visualizes various pathfinding algorithms such as Dijks
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repository-URL>
-   cd <your-repository-name>
+   git clone https://github.com/ahnaft80/pathfinder/
+   cd pathfinder
    ```
 
 2. **Install dependencies:**

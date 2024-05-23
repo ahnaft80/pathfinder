@@ -1,0 +1,71 @@
+/* Grid.css */
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This centers the grid vertically if there's enough space. */
+    margin: auto;
+    margin-top: 20px; /* Specific top margin as per your CSS */
+    gap: 1px; /* Adjust if you want space between nodes */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+.row {
+    display: flex;
+}
+
+.node {
+    width: 20px; /* Width of each node */
+    height: 20px; /* Height of each node */
+    border: 1px solid black; /* Border color as per your CSS */
+    margin: 1px; /* Margin around each node */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Indicates the node is interactive */
+    transition: background-color 0.3s ease; /* Transition for background color change */
+}
+
+.node-start {
+    background-color: green; /* Green for the start node */
+}
+
+.node-end {
+    background-color: rgb(245, 41, 41); /* Red for the end/target node */
+}
+
+.node-wall {
+    background-color: black; /* Black for wall nodes */
+}
+
+.node-visited {
+    background-color: rgb(138, 118, 172); /* Blue for visited nodes */
+    animation: nodeVisitedAnimation 0.3s ease-in-out; /* Animation for visited nodes */
+}
+
+.node-shortest-path {
+    background-color: rgb(186, 96, 6); /* Yellow for shortest-path nodes */
+    animation: nodePathAnimation 0.5s ease-in-out; /* Animation for shortest-path nodes */
+}
+
+.node:hover:not(.node-start):not(.node-end):not(.node-wall) {
+    background-color: #eeeeee; /* Light grey background for hover effect, this will not change the color of walls, start or end nodes when hovered */
+}
+
+@keyframes nodeVisitedAnimation {
+    from {
+        transform: scale(0.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes nodePathAnimation {
+    from {
+        background-color: rgb(165, 14, 6); /* Starting color of the animation */
+    }
+    to {
+        background-color: rgb(196, 60, 15); /* Ending color of the animation */
+    }
+}

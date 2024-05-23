@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Pathfinding Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React application that visualizes various pathfinding algorithms such as Dijkstra's, A*, BFS, DFS, and Bidirectional Search. This project allows users to create walls, set start and end points, and visualize the algorithms in action.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Algorithms](#algorithms)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repository-URL>
+   cd <your-repository-name>
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+3. **Start the development server:**
+   ```bash
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Open your browser and navigate to:**
+   ```
+   http://localhost:3000
+   ```
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Select an Algorithm:**
+   Use the dropdown menu to select the pathfinding algorithm you want to visualize.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Toggle Wall Mode:**
+   Click the "Wall Mode On" button to enable wall creation. Click on the grid to add or remove walls.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Set Start and End Nodes:**
+   Click on the grid to set the start and end nodes.
 
-### `npm run eject`
+4. **Start Visualization:**
+   Click the "Start Pathfinding" button to visualize the selected algorithm.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Reset Grid:**
+   Click the "Reset Grid" button to clear the grid and start over.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Interactive Grid:**
+  - Click to set start and end nodes.
+  - Toggle wall mode to add or remove walls.
+  - Reset the grid to start over.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Algorithm Visualization:**
+  - Visualize the pathfinding process of various algorithms.
 
-## Learn More
+## Algorithms
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Dijkstra's Algorithm:**
+  - Finds the shortest path in weighted and unweighted grids.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **A* Search:**
+  - Uses heuristics to improve performance over Dijkstra's.
 
-### Code Splitting
+- **Breadth-First Search (BFS):**
+  - Finds the shortest path in unweighted grids.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Depth-First Search (DFS):**
+  - Explores as far as possible along each branch before backtracking.
 
-### Analyzing the Bundle Size
+- **Bidirectional Search:**
+  - Simultaneously searches from both start and end nodes to find the shortest path.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+1. **Fork the repository.**
+2. **Create a new branch:**
+   ```bash
+   git checkout -b feature-branch
+   ```
+3. **Make your changes and commit them:**
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. **Push to the branch:**
+   ```bash
+   git push origin feature-branch
+   ```
+5. **Create a pull request.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can copy and paste this content into your `README.md` file.
